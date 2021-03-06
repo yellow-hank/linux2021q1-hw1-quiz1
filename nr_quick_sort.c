@@ -23,7 +23,7 @@ void nr_quicksort(node_t **list)
 
     stack[0] = (*list);
 
-    while(top>=0) {
+    while(top>=0 && top < MAX_LEVELS) {
 
         if(!stack[top]) {
             top--;
